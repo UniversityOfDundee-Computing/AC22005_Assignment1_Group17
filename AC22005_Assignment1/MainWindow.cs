@@ -29,6 +29,7 @@ namespace AC22005_Assignment1
         {
             numericUpDown1.Value = trackBar1.Value;
             rowCount = trackBar1.Value;
+            label4.Text = rowCount.ToString();
         }
 
 
@@ -36,18 +37,24 @@ namespace AC22005_Assignment1
         {
            trackBar1.Value = Decimal.ToInt32(numericUpDown1.Value);
            rowCount = Decimal.ToInt32(numericUpDown1.Value);
+            label4.Text = rowCount.ToString();
+
         }
 
         private void trackbar2_scroll(object sender, EventArgs e)
         {
             numericUpDown2.Value = trackBar2.Value;
             colCount = trackBar2.Value;
+            label5.Text = colCount.ToString();
+
         }
 
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
             trackBar2.Value = Decimal.ToInt32(numericUpDown2.Value);
             colCount = Decimal.ToInt32(numericUpDown2.Value);
+            label5.Text = colCount.ToString();
+
         }
 
 
@@ -55,12 +62,18 @@ namespace AC22005_Assignment1
         {
             numericUpDown3.Value = trackBar3.Value;
             mineCount = trackBar3.Value;
+            label6.Text = mineCount.ToString();
+
         }
 
         private void numericUpDown3_ValueChanged(object sender, EventArgs e)
         {
             trackBar3.Value = Decimal.ToInt32(numericUpDown3.Value);
             mineCount = Decimal.ToInt32(numericUpDown3.Value);
+            label6.Text = mineCount.ToString();
+
         }
+
+
     }
 }
